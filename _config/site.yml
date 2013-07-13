@@ -1,0 +1,17 @@
+name: '**Write**__Adapt__'
+title: WriteAdapt - For People Who Love Content
+org: Adaptive Media
+base_url: ''
+haml:
+  :ugly: true
+asciidoctor:
+  :safe: safe
+  :attributes:
+    showtitle: ''
+    idprefix: ''
+    idseparator: '-'
+    sectanchors: ''
+    icons: font
+    source-highlighter: coderay
+    coderay-css: style
+#    awestruct-layout: base@  # will this work?

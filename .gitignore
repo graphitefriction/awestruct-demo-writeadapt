@@ -1,0 +1,7 @@
+/.awestruct/
+/.sass-cache/
+/_site/
+/_tmp/
+/.ruby-*
+/Gemfile.lock
+/stylesheets/_themes/

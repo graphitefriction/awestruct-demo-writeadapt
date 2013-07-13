@@ -1,0 +1,24 @@
+@import "_themes/sass/foundation-embedded.scss";
+//@import "_themes/sass/asciidoctor-embedded.scss";
+//@import "_themes/sass/rocket-panda-embedded.scss";
+@import "foundation/components/buttons";
+@import "foundation/components/top-bar";
+@import "foundation/components/inline-lists";
+
+// fall through defaults
+$footer-bg: $body-font-color !default;
+$footer-font-color: invert($body-font-color) !default;
+
+.top-bar a {
+  text-decoration: none;
+}
+
+h1 em {
+  letter-spacing: 1px;
+}
+
+footer {
+  background: $footer-bg;
+  padding: $panel-padding;
+  color: $footer-font-color;
+}

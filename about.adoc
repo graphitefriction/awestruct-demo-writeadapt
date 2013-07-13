@@ -1,0 +1,9 @@
+= About WriteAdapt
+Your Name
+:awestruct-layout: base
+
+WriteAdapt was founded by {author} at a conference workshop.
+It's quickly becoming much bigger than these humble beginnings.
+
+This page is written in http://asciidoc.org[AsciiDoc].
+It's transformed by http://awestruct.org[Awestruct] and http://asciidoctor.org[Asciidoctor] into a webpage in this static website.
