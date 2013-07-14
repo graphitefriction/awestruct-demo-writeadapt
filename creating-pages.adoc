@@ -1,5 +1,6 @@
 = Creating pages
 :awestruct-layout: base
+:showtitle:
 :prev_section: posts
 :next_section: variables
 

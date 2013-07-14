@@ -1,0 +1,27 @@
+%article.post
+  %header.post-head
+    %h1.title
+      %a{:href=>page.post.url}=page.post.title
+    %h4
+      %em by
+      %span.author=page.post.author
+      on
+      %time.pubdate{:datetime=>page.post.date.strftime('%FT%T%:z')}=page.post.date.strftime '%B %e, %Y'
+  .post-body
+    - if page.listing
+      %p=page.post.excerpt || summarize(html_to_text(page.post.content), 100)
+      %p
+        %a.small.secondary.button{:href=>page.post.url} Read more...
+    - else
+      =page.post.content
+  %footer.post-footer
+    - if page.post.tags
+      .tags
+        %span.title
+          tags: 
+        =page.post.tag_links
+  - if !page.listing
+    %hr
+    - if site.disqus && !site.disqus_developer
+      #comments
+        =page.post.disqus_comments

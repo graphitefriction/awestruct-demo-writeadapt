@@ -1,0 +1,32 @@
+- paginator = page.paginator
+.pagination-centered
+  %ul.pagination
+    - if paginator.previous_page
+      %li.arrow
+        %a{:href=>paginator.pages.first.url}
+          %i.icon-fast-backward
+      %li.arrow
+        %a{:href=>paginator.previous_page.url}
+          %i.icon-step-backward
+    - else
+      %li.arrow.unavailable
+        %a{:href=>'#'}
+          %i.icon-fast-backward
+      %li.arrow.unavailable
+        %a{:href=>'#'}
+          %i.icon-step-backward
+    %li #{paginator.current_page_index + 1} of #{paginator.pages.size}
+    - if paginator.next_page
+      %li.arrow
+        %a{:href=>paginator.next_page.url}
+          %i.icon-step-forward
+      %li.arrow
+        %a{:href=>paginator.pages.last.url}
+          %i.icon-fast-forward
+    - else
+      %li.arrow.unavailable
+        %a{:href=>'#'}
+          %i.icon-step-forward
+      %li.arrow.unavailable
+        %a{:href=>'#'}
+          %i.icon-fast-forward

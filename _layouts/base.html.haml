@@ -7,9 +7,9 @@
   %meta(charset='utf-8')
   %meta(name='viewport' content='width=device-width, initial-scale=1.0')
   %title=site.title
-  %link{:rel=>'stylesheet', :href=>"#{site.base_url}/stylesheets/normalize.css"}
   %link{:rel=>'stylesheet', :href=>"#{site.base_url}/stylesheets/app.css"}
   %script(src="#{site.base_url}/javascripts/vendor/custom.modernizr.js")
+  %link{:rel=>'alternate', :type=>'application/atom+xml', :href=>"#{site.base_url}/feed.xml"}
   %link{:rel=>'author', :type=>'text/plain', :href=>"#{site.base_url}/humans.txt"}
 %body.antialiased
   %nav.top-bar
@@ -27,7 +27,7 @@
             %a{:href=>"#{site.base_url}/"} Home
         %li.divider
           %li
-            %a{:href=>"#{site.base_url}/about.html"} About
+            %a{:href=>"#{site.base_url}/about"} About
   #content.row
     .large-12.columns
       ~ content
@@ -36,13 +36,13 @@
       %p(style='margin-bottom: 0')
         &copy; #{site.org} #{Date.today.year}
         %br
-        Built on Foundation. Baked by Awestruct.
+        Composed in AsciiDoc. Styled by Foundation. Baked with Awestruct.
     .large-6.columns
       %ul.inline-list.right
         %li
           %a{:href=>"#{site.base_url}/"} Home
         %li
-          %a{:href=>"#{site.base_url}/about.html"} About
+          %a{:href=>"#{site.base_url}/about"} About
   %script
     document.write('<script src=' + ('__proto__' in {} ? '#{site.base_url}/javascripts/vendor/zepto' : '#{site.base_url}/javascripts/vendor/jquery') + '.js><\/script>')
   %script{:src=>"#{site.base_url}/javascripts/foundation/foundation.js"}

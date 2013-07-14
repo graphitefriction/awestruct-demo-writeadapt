@@ -1,0 +1,36 @@
+= Docs Workshop at OSCON 2013
+Author Name
+2013-07-22
+:awestruct-tags: [conference, oscon]
+:excerpt: Content of first post, reporting from OSCON!
+:awestruct-excerpt: {excerpt}
+
+{excerpt}
+
+image:oscon-mascot.jpg[role="thumb right", link="http://www.flickr.com/photos/oreillyconf/7593405162/in/set-72157630609904796"] I'm excited to be at OSCON 2013.
+I'm currently attending a workshop on collaborative documentation.
+We're learning about how to:
+
+- setup a static website with Awestruct
+- compose content in AsciiDoc
+- collaborate on content using git and GitHub
+- publish the website to GitHub Pages
+- and lots more!
+
+In fact, this website was launched during the workshop.
+
+I can't wait to show my site to these GitHub guys.
+They'll be proud ;)
+
+[caption="", link="http://www.flickr.com/photos/oreillyconf/7585059188/in/set-72157630609904796"]
+.GitHub trainers, Matthew and Tim - [credit]#Photo credit: http://www.flickr.com/photos/oreillyconf/sets/72157630609904796[OSCON]#
+image::github-trainers.jpg[]
+
+This video embodies the core values of open source.
+
+.Mozilla Firefox Manifesto
+[poster="http://www.mozilla.org/images/about/poster.jpg"]
+video::http://videos-cdn.mozilla.net/brand/Mozilla_Firefox_Manifesto_v0.2_640.webm[]
+
+[.credits.small]
+Photo credits: http://www.flickr.com/photos/oreillyconf/sets/72157630609904796[OSCON]

@@ -1,6 +1,7 @@
 = About WriteAdapt
 Your Name
 :awestruct-layout: base
+:showtitle:
 
 WriteAdapt was founded by {author} at a conference workshop.
 It's quickly becoming much bigger than these humble beginnings.

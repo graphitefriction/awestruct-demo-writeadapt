@@ -1,0 +1,6 @@
+= First Post
+Author Name
+2013-01-01
+:awestruct-tags: [awestruct, asciidoc]
+
+Content of first post.

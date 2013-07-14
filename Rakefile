@@ -92,6 +92,10 @@ task :preview => :check do
   run_awestruct '-d'
 end
 
+# provide a serve task for those used to Jekyll commands
+desc 'An alias to the preview task'
+task :serve => :preview
+
 desc 'Generate the site using the development profile'
 task :gen => :check do
   run_awestruct '-P development -g --force'

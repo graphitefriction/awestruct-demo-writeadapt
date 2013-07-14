@@ -1,5 +1,6 @@
 = Writing posts
 :awestruct-layout: base
+:showtitle:
 :prev_section: frontmatter
 :next_section: pages
 
