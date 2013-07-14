@@ -2,5 +2,6 @@
 Author Name
 2013-01-01
 :awestruct-tags: [awestruct, asciidoc]
+:imagesdir: ../images
 
 Content of first post.

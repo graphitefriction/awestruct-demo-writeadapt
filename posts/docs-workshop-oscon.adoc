@@ -4,6 +4,7 @@ Author Name
 :awestruct-tags: [conference, oscon]
 :excerpt: Content of first post, reporting from OSCON!
 :awestruct-excerpt: {excerpt}
+:imagesdir: ../images
 
 {excerpt}
 
