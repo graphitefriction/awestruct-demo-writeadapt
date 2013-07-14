@@ -6,6 +6,11 @@ Author Name
 :awestruct-excerpt: {excerpt}
 :imagesdir: ../images
 
+ifndef::icons[]
+[float]
+= Docs Workshop at OSCON 2013
+endif::icons[]
+
 {excerpt}
 
 image:oscon-mascot.jpg[role="thumb right", link="http://www.flickr.com/photos/oreillyconf/7593405162/in/set-72157630609904796"] I'm excited to be at OSCON 2013.

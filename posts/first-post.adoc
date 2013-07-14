@@ -4,4 +4,9 @@ Author Name
 :awestruct-tags: [awestruct, asciidoc]
 :imagesdir: ../images
 
+ifndef::icons[]
+[float]
+= Docs Workshop at OSCON 2013
+endif::icons[]
+
 Content of first post.
