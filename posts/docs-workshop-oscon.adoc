@@ -38,5 +38,6 @@ This video embodies the core values of open source.
 [poster="http://www.mozilla.org/images/about/poster.jpg"]
 video::http://videos-cdn.mozilla.net/brand/Mozilla_Firefox_Manifesto_v0.2_640.webm[]
 
-[.credits.small]
+//[.credits.small]
+[role="credits small"]
 Photo credits: http://www.flickr.com/photos/oreillyconf/sets/72157630609904796[OSCON]
