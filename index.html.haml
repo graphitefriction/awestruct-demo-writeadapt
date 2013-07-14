@@ -8,5 +8,5 @@ layout: base
 .row
   .large-12.columns.posts
     - page.posts.each do |post|
-      =partial 'post-content.html.haml', :post => post, :listing => true
+      =partial 'post.html.haml', :post => post, :listing => true
     =partial 'pagination.html.haml', :paginator => page.posts
