@@ -1,9 +1,9 @@
-= About WriteAdapt
+= About {site_name}
 Your Name
 :awestruct-layout: base
 :showtitle:
 
-WriteAdapt was founded by {author} at a conference workshop.
+{site_name} was founded by {author} during a conference workshop.
 It's quickly becoming much bigger than these humble beginnings.
 
 This page is written in http://asciidoc.org[AsciiDoc].

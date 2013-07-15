@@ -1,12 +1,16 @@
-name: '**Write**__Adapt__'
+name: Write__Adapt__
 title: WriteAdapt - For People Who Love Content
 org: Adaptive Media
+author: The Octocat
+author_url: https://github.com/octocat
 base_url: ''
+interpolate: false
 haml:
   :ugly: true
 asciidoctor:
   :safe: safe
   :attributes:
+    site_name: WriteAdapt
     idprefix: ''
     idseparator: '-'
     sectanchors: ''

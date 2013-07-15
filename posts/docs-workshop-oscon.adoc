@@ -1,9 +1,10 @@
 = Docs Workshop at OSCON 2013
-Author Name
+The Octocat <https://github.com/octocat>
 2013-07-22
 :awestruct-tags: [conference, oscon]
 :excerpt: Content of first post, reporting from OSCON!
 :awestruct-excerpt: {excerpt}
+:awestruct-author_url: {email}
 :imagesdir: ../images
 
 ifndef::icons[]
