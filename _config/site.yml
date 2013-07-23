@@ -31,6 +31,7 @@ profiles:
     asciidoctor:
       :attributes:
         base_url: http://graphitefriction.github.io/awestruct-demo-writeadapt
+        imagesdir: /awestruct-demo-writeadapt/images
     deploy:
       host: github_pages
       branch: gh-pages

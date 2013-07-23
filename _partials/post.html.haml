@@ -1,11 +1,13 @@
+- post_url = "#{site.base_url}#{page.post.url}"
+- author_url = page.post.author_url || site.author_url
 %article.post
   %header.post-head
     %h1.title
-      %a{:href=>page.post.url}=page.post.title
+      %a{:href=>post_url}=page.post.title
     %h4
       %em by
-      %a.author{:href=>page.post.author_url || site.author_url}
-        %img{:src=>"#{page.post.author_url || site.author_url}.png"}(width=24 height=24)
+      %a.author{:href=>author_url}
+        %img{:src=>"#{author_url}.png"}(width=24 height=24)
         =page.post.author || site.author
       on
       %time.pubdate{:datetime=>page.post.date.strftime('%FT%T%:z')}=page.post.date.strftime '%B %e, %Y'
@@ -13,7 +15,7 @@
     - if page.listing
       %p=page.post.excerpt || summarize(html_to_text(page.post.content), 100)
       %p
-        %a.small.secondary.button{:href=>page.post.url} Read more...
+        %a.small.secondary.button{:href=>post_url} Read more...
     - else
       =page.post.content
   %footer.post-footer
@@ -21,7 +23,11 @@
       .tags
         %span.title
           tags: 
-        =page.post.tag_links
+        -#=page.post.tag_links
+        - page.post.tags.each_with_index do |tag, idx|
+          - unless idx.zero?
+            =', '
+          %a{:href=>"#{site.base_url}#{tag.primary_page.url}"}=tag
   - if !page.listing
     %hr
     - if site.disqus && !site.disqus_developer

@@ -3,10 +3,10 @@
   %ul.pagination
     - if paginator.previous_page
       %li.arrow
-        %a{:href=>paginator.pages.first.url}
+        %a{:href=>"#{site.base_url}#{paginator.pages.first.url}"}
           %i.icon-fast-backward
       %li.arrow
-        %a{:href=>paginator.previous_page.url}
+        %a{:href=>"#{site.base_url}#{paginator.previous_page.url}"}
           %i.icon-step-backward
     - else
       %li.arrow.unavailable
@@ -18,10 +18,10 @@
     %li #{paginator.current_page_index + 1} of #{paginator.pages.size}
     - if paginator.next_page
       %li.arrow
-        %a{:href=>paginator.next_page.url}
+        %a{:href=>"#{site.base_url}#{paginator.next_page.url}"}
           %i.icon-step-forward
       %li.arrow
-        %a{:href=>paginator.pages.last.url}
+        %a{:href=>"#{site.base_url}#{paginator.pages.last.url}"}
           %i.icon-fast-forward
     - else
       %li.arrow.unavailable
