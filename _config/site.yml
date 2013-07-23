@@ -4,6 +4,7 @@ org: Adaptive Media
 author: The Octocat
 author_url: https://github.com/octocat
 base_url: ''
+ctx_path: ''
 interpolate: false
 haml:
   :ugly: true
@@ -27,11 +28,14 @@ profiles:
       dummy:
   production:
     base_url: http://graphitefriction.github.io/awestruct-demo-writeadapt
+    ctx_path: /awestruct-demo-writeadapt
     disqus_developer: false
     asciidoctor:
       :attributes:
         base_url: http://graphitefriction.github.io/awestruct-demo-writeadapt
-        imagesdir: /awestruct-demo-writeadapt/images
+        ctx_path: /awestruct-demo-writeadapt
+        # necessary to set imagesdir to absolute path to prevent Awestruct from botching Atom feed
+        imagesdir: http://graphitefriction.github.io/awestruct-demo-writeadapt/images
     deploy:
       host: github_pages
       branch: gh-pages
