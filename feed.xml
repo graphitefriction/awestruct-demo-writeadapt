@@ -5,13 +5,13 @@
 <author>
 <name>The Octocat</name>
 </author>
-<updated>2013-07-23T02:09:46-07:00</updated>
+<updated>2013-07-23T02:39:55-07:00</updated>
 <link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/feed.xml" rel="self" type="application/atom+xml" />
 <link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/" rel="alternate" type="text/html" />
 <entry>
 <id>http://graphitefriction.github.io/awestruct-demo-writeadapt/posts/2013/07/22/docs-workshop-oscon/</id>
 <title>Docs Workshop at OSCON 2013</title>
-<updated>2013-07-23T02:09:46-07:00</updated>
+<updated>2013-07-23T02:39:55-07:00</updated>
 <published>2013-07-22T00:00:00+00:00</published>
 <link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/posts/2013/07/22/docs-workshop-oscon/" rel="alternate" type="text/html" />
 <author>
@@ -149,7 +149,7 @@ Your browser does not support the video tag.
 <entry>
 <id>http://graphitefriction.github.io/awestruct-demo-writeadapt/posts/2013/01/01/first-post/</id>
 <title>First Post</title>
-<updated>2013-07-23T02:09:46-07:00</updated>
+<updated>2013-07-23T02:49:42-07:00</updated>
 <published>2013-01-01T00:00:00+00:00</published>
 <link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/posts/2013/01/01/first-post/" rel="alternate" type="text/html" />
 <author>
@@ -161,7 +161,7 @@ Your browser does not support the video tag.
 
 
 
-Content of first post.
+I&#8217;m writing website content in AsciiDoc!
 
 
 
@@ -174,7 +174,7 @@ Content of first post.
 &lt;div id=&quot;preamble&quot;&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Content of first post.&lt;/p&gt;
+&lt;p&gt;I’m writing website content in AsciiDoc!&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
