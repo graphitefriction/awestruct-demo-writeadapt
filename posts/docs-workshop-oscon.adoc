@@ -23,6 +23,8 @@ We're learning about how to:
 - collaborate on content using git and GitHub
 - publish the website to GitHub Pages
 - and lots more!
+- had some beers
+- and converted from MarkDown
 
 In fact, this website was launched during the workshop.
 
