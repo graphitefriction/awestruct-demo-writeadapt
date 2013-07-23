@@ -9,4 +9,4 @@ ifndef::icons[]
 = Docs Workshop at OSCON 2013
 endif::icons[]
 
-Content of first post.
+I'm writing website content in AsciiDoc!
