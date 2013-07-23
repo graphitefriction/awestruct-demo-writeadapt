@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>WriteAdapt - For People Who Love Content</title>
+<link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/stylesheets/app.css" rel="stylesheet">
+<script src="http://graphitefriction.github.io/awestruct-demo-writeadapt/javascripts/vendor/custom.modernizr.js"></script>
+<link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/feed.xml" rel="alternate" type="application/atom+xml">
+<link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/humans.txt" rel="author" type="text/plain">
+</head>
+<body class="antialiased">
+<nav class="top-bar">
+<ul class="title-area">
+<li class="name">
+<h1>
+<a href="http://graphitefriction.github.io/awestruct-demo-writeadapt/">Write<em>Adapt</em></a>
+</h1>
+</li>
+<li class="toggle-topbar menu-icon">
+<a href="#"><span></span></a>
+</li>
+</ul>
+<section class="top-bar-section">
+<ul class="right">
+<li class="divider">
+<li>
+<a href="http://graphitefriction.github.io/awestruct-demo-writeadapt/">Home</a>
+</li>
+</li>
+<li class="divider">
+<li>
+<a href="http://graphitefriction.github.io/awestruct-demo-writeadapt/about">About</a>
+</li>
+</li>
+</ul>
+</section>
+</nav>
+<div class="row" id="content">
+<div class="large-12 columns">
+<h1>Writing posts</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>One of Jekyll&#8217;s best aspects is that it is &#8220;blog aware&#8221;. What does this mean,
+exactly? Well, simply put, it means that blogging is baked into Jekyll&#8217;s
+functionality. If you write articles and publish them online, this means that
+you can publish and maintain a blog simply by managing a folder of text-files
+on your computer. Compared to the hassle of configuring and maintaining
+databases and web-based CMS systems, this will be a welcome change!</p>
+</div>
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="the-posts-folder"><a class="anchor" href="#the-posts-folder"></a>The Posts Folder</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As explained on the <a href="../structure">directory structure</a> page, the <code>_posts</code>
+folder is where your blog posts will live. These files can be either
+<a href="http://daringfireball.net/projects/markdown/">Markdown</a> or
+<a href="http://textile.sitemonks.com/">Textile</a> formatted text files, and as long as
+they have <a href="../frontmatter">YAML front-matter</a>, they will be converted from
+their source format into an HTML page that is part of your static site.</p>
+</div>
+<div class="sect2">
+<h3 id="creating-post-files"><a class="anchor" href="#creating-post-files"></a>Creating Post Files</h3>
+<div class="paragraph">
+<p>To create a new post, all you need to do is create a new file in the <code>_posts</code>
+directory. How you name files in this folder is important. Jekyll requires blog
+post files to be named according to the following format:</p>
+</div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre class="CodeRay"><code class="bash language-bash">YEAR-MONTH-DAY-title.MARKUP</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Where <code>YEAR</code> is a four-digit number, <code>MONTH</code> and <code>DAY</code> are both two-digit
+numbers, and <code>MARKUP</code> is the file extension representing the format used in the
+file. For example, the following are examples of valid post filenames:</p>
+</div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre class="CodeRay"><code class="bash language-bash">2011-12-31-new-years-eve-is-awesome.md&#x000A;2012-09-12-how-to-write-a-blog.textile</code></pre>
+</div>
+</div>
+
+</div>
+<div class="sect2">
+<h3 id="content-formats"><a class="anchor" href="#content-formats"></a>Content Formats</h3>
+<div class="paragraph">
+<p>All blog post files must begin with <a href="../frontmatter">YAML front- matter</a>.
+After that, it&#8217;s simply a matter of deciding which format you prefer. Jekyll
+supports two popular content markup formats:
+<a href="http://daringfireball.net/projects/markdown/">Markdown</a> and
+<a href="http://textile.sitemonks.com/">Textile</a>. These formats each have their own way
+of marking up different types of content within a post, so you should
+familiarize yourself with these formats and decide which one best suits your
+needs.</p>
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="including-images-and-resources"><a class="anchor" href="#including-images-and-resources"></a>Including images and resources</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Chances are, at some point, you&#8217;ll want to include images, downloads, or other
+digital assets along with your text content. While the syntax for linking to
+these resources differs between Markdown and Textile, the problem of working
+out where to store these files in your site is something everyone will face.</p>
+</div>
+<div class="paragraph">
+<p>Because of Jekyll&#8217;s flexibility, there are many solutions to how to do this.
+One common solution is to create a folder in the root of the project directory
+called something like <code>assets</code> or <code>downloads</code>, into which any images, downloads
+or other resources are placed. Then, from within any post, they can be linked
+to using the site&#8217;s root as the path for the asset to include. Again, this will
+depend on the way your site&#8217;s (sub)domain and path are configured, but here
+some examples (in Markdown) of how you could do this using the <code>site.url</code>
+variable in a post.</p>
+</div>
+<div class="paragraph">
+<p>Including an image asset in a post:</p>
+</div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre class="CodeRay"><code class="text language-text">... which is shown in the screenshot below:&#x000A;![My helpful screenshot]({% raw %}{{ site.url }}{% endraw %}/assets/screenshot.jpg)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Linking to a PDF for readers to download:</p>
+</div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre class="CodeRay"><code class="text language-text">... you can [get the PDF]({% raw %}{{ site.url }}{% endraw %}/assets/mydoc.pdf) directly.</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Link using just the site root URL</div>
+You can skip the <code>{% raw %}{{ site.url }}{% endraw %}</code> variable if you <strong>know</strong>
+your site will only ever be displayed at the root URL of your domain. In this
+case you can reference assets directly with just <code>/path/file.jpg</code>.
+</td>
+</tr>
+</table>
+</div>
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="displaying-an-index-of-posts"><a class="anchor" href="#displaying-an-index-of-posts"></a>Displaying an index of posts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It&#8217;s all well and good to have posts in a folder, but a blog is no use unless
+you have a list of posts somewhere. Creating an index of posts on another page
+(or in a <a href="../templates">template</a>) is easy, thanks to the
+<a href="http://wiki.shopify.com/Liquid">Liquid template language</a> and its tags. Here&#8217;s a
+basic example of how to create a list of links to your blog posts:</p>
+</div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre class="CodeRay"><code class="html language-html"><span style="color:#070">&lt;ul&gt;</span>&#x000A;  {% raw %}{% for post in site.posts %}{% endraw %}&#x000A;    <span style="color:#070">&lt;li&gt;</span>&#x000A;      <span style="color:#070">&lt;a</span> <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">{% raw %}{{ post.url }}{% endraw %}</span><span style="color:#710">&quot;</span></span><span style="color:#070">&gt;</span>{% raw %}{{ post.title }}{% endraw %}<span style="color:#070">&lt;/a&gt;</span>&#x000A;    <span style="color:#070">&lt;/li&gt;</span>&#x000A;  {% raw %}{% endfor %}{% endraw %}&#x000A;<span style="color:#070">&lt;/ul&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Of course, you have full control over how (and where) you display your posts,
+and how you structure your site. You should read more about
+<a href="../templates">how templates work</a> with Jekyll if you want to know more.</p>
+</div>
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="post-excerpts"><a class="anchor" href="#post-excerpts"></a>Post excerpts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Each post automatically takes the first block of text, from the beginning of
+the content to the first occurrence of <code>excerpt_separator</code>, and sets it as the
+<code>post.excerpt</code>.  Take the above example of an index of posts. Perhaps you want
+to include a little hint about the post&#8217;s content by adding the first paragraph
+of each of your posts:</p>
+</div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre class="CodeRay"><code class="html language-html"><span style="color:#070">&lt;ul&gt;</span>&#x000A;  {% raw %}{% for post in site.posts %}{% endraw %}&#x000A;    <span style="color:#070">&lt;li&gt;</span>&#x000A;      <span style="color:#070">&lt;a</span> <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">{% raw %}{{ post.url }}{% endraw %}</span><span style="color:#710">&quot;</span></span><span style="color:#070">&gt;</span>{% raw %}{{ post.title }}{% endraw %}<span style="color:#070">&lt;/a&gt;</span>&#x000A;      <span style="color:#070">&lt;p&gt;</span>{% raw %}{{ post.excerpt }}{% endraw %}<span style="color:#070">&lt;/p&gt;</span>&#x000A;    <span style="color:#070">&lt;/li&gt;</span>&#x000A;  {% raw %}{% endfor %}{% endraw %}&#x000A;<span style="color:#070">&lt;/ul&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you don&#8217;t like the automatically-generated post excerpt, it can be
+overridden by adding <code>excerpt</code> to your post&#8217;s YAML front-matter.</p>
+</div>
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="highlighting-code-snippets"><a class="anchor" href="#highlighting-code-snippets"></a>Highlighting code snippets</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Jekyll also has built-in support for syntax highlighting of code snippets using
+Pygments, and including a code snippet in any post is easy. Just use the
+dedicated Liquid tag as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre class="CodeRay"><code class="text language-text">{% raw %}{% highlight ruby %}{% endraw %}&#x000A;def show&#x000A;  @widget = Widget(params[:id])&#x000A;  respond_to do |format|&#x000A;    format.html # show.html.erb&#x000A;    format.json { render json: @widget }&#x000A;  end&#x000A;end&#x000A;{% raw %}{% endhighlight %}{% endraw %}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And the output will look like this:</p>
+</div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre class="CodeRay"><code class="ruby language-ruby"><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">show</span>&#x000A;  <span style="color:#33B">@widget</span> = Widget(params[<span style="color:#A60">:id</span>])&#x000A;  respond_to <span style="color:#080;font-weight:bold">do</span> |format|&#x000A;    format.html <span style="color:#777"># show.html.erb</span>&#x000A;    format.json { render <span style="color:#606">json</span>: <span style="color:#33B">@widget</span> }&#x000A;  <span style="color:#080;font-weight:bold">end</span>&#x000A;<span style="color:#080;font-weight:bold">end</span></code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title">Show line numbers</div>
+You can make code snippets include line-numbers by adding the word
+<code>linenos</code> to the end of the opening highlight tag like this:
+<code>{% raw %}{% highlight ruby linenos %}{% endraw %}</code>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>These basics should be enough to get you started writing your first posts. When
+you&#8217;re ready to dig into what else is possible, you might be interested in
+doing things like <a href="../permalinks">customizing post permalinks</a> or using
+<a href="../variables">custom variables</a> in your posts and elsewhere on your site.</p>
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+<footer class="row" style="max-width: 100%">
+<div class="large-6 columns">
+<p style="margin-bottom: 0">
+&copy; Adaptive Media 2013
+<br>
+Composed in AsciiDoc. Styled by Foundation. Baked with Awestruct.
+</p>
+</div>
+<div class="large-6 columns">
+<ul class="inline-list right">
+<li>
+<a href="http://graphitefriction.github.io/awestruct-demo-writeadapt/">Home</a>
+</li>
+<li>
+<a href="http://graphitefriction.github.io/awestruct-demo-writeadapt/about">About</a>
+</li>
+</ul>
+</div>
+</footer>
+<script>
+document.write('<script src=' + ('__proto__' in {} ? 'http://graphitefriction.github.io/awestruct-demo-writeadapt/javascripts/vendor/zepto' : 'http://graphitefriction.github.io/awestruct-demo-writeadapt/javascripts/vendor/jquery') + '.js><\/script>')
+</script>
+<script src="http://graphitefriction.github.io/awestruct-demo-writeadapt/javascripts/foundation/foundation.js"></script>
+<script src="http://graphitefriction.github.io/awestruct-demo-writeadapt/javascripts/foundation/foundation.topbar.js"></script>
+<script>
+$(document).foundation()
+</script>
+</body>
+</html>
