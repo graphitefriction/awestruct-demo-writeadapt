@@ -38,7 +38,7 @@
 </section>
 </nav>
 <div class="row" id="content">
-<div class="large-12 columns">
+<div class="large-9 columns">
 <h1>Writing posts</h1>
 <div id="preamble">
 <div class="sectionbody">
@@ -83,7 +83,8 @@ file. For example, the following are examples of valid post filenames:</p>
 </div>
 <div class="listingblock">
 <div class="content monospaced">
-<pre class="CodeRay"><code class="bash language-bash">2011-12-31-new-years-eve-is-awesome.md&#x000A;2012-09-12-how-to-write-a-blog.textile</code></pre>
+<pre class="CodeRay"><code class="bash language-bash">2011-12-31-new-years-eve-is-awesome.md
+2012-09-12-how-to-write-a-blog.textile</code></pre>
 </div>
 </div>
 
@@ -129,7 +130,8 @@ variable in a post.</p>
 </div>
 <div class="listingblock">
 <div class="content monospaced">
-<pre class="CodeRay"><code class="text language-text">... which is shown in the screenshot below:&#x000A;![My helpful screenshot]({% raw %}{{ site.url }}{% endraw %}/assets/screenshot.jpg)</code></pre>
+<pre class="CodeRay"><code class="text language-text">... which is shown in the screenshot below:
+![My helpful screenshot]({% raw %}{{ site.url }}{% endraw %}/assets/screenshot.jpg)</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -170,7 +172,13 @@ basic example of how to create a list of links to your blog posts:</p>
 </div>
 <div class="listingblock">
 <div class="content monospaced">
-<pre class="CodeRay"><code class="html language-html"><span style="color:#070">&lt;ul&gt;</span>&#x000A;  {% raw %}{% for post in site.posts %}{% endraw %}&#x000A;    <span style="color:#070">&lt;li&gt;</span>&#x000A;      <span style="color:#070">&lt;a</span> <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">{% raw %}{{ post.url }}{% endraw %}</span><span style="color:#710">&quot;</span></span><span style="color:#070">&gt;</span>{% raw %}{{ post.title }}{% endraw %}<span style="color:#070">&lt;/a&gt;</span>&#x000A;    <span style="color:#070">&lt;/li&gt;</span>&#x000A;  {% raw %}{% endfor %}{% endraw %}&#x000A;<span style="color:#070">&lt;/ul&gt;</span></code></pre>
+<pre class="CodeRay"><code class="html language-html"><span style="color:#070">&lt;ul&gt;</span>
+  {% raw %}{% for post in site.posts %}{% endraw %}
+    <span style="color:#070">&lt;li&gt;</span>
+      <span style="color:#070">&lt;a</span> <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">{% raw %}{{ post.url }}{% endraw %}</span><span style="color:#710">&quot;</span></span><span style="color:#070">&gt;</span>{% raw %}{{ post.title }}{% endraw %}<span style="color:#070">&lt;/a&gt;</span>
+    <span style="color:#070">&lt;/li&gt;</span>
+  {% raw %}{% endfor %}{% endraw %}
+<span style="color:#070">&lt;/ul&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -193,7 +201,14 @@ of each of your posts:</p>
 </div>
 <div class="listingblock">
 <div class="content monospaced">
-<pre class="CodeRay"><code class="html language-html"><span style="color:#070">&lt;ul&gt;</span>&#x000A;  {% raw %}{% for post in site.posts %}{% endraw %}&#x000A;    <span style="color:#070">&lt;li&gt;</span>&#x000A;      <span style="color:#070">&lt;a</span> <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">{% raw %}{{ post.url }}{% endraw %}</span><span style="color:#710">&quot;</span></span><span style="color:#070">&gt;</span>{% raw %}{{ post.title }}{% endraw %}<span style="color:#070">&lt;/a&gt;</span>&#x000A;      <span style="color:#070">&lt;p&gt;</span>{% raw %}{{ post.excerpt }}{% endraw %}<span style="color:#070">&lt;/p&gt;</span>&#x000A;    <span style="color:#070">&lt;/li&gt;</span>&#x000A;  {% raw %}{% endfor %}{% endraw %}&#x000A;<span style="color:#070">&lt;/ul&gt;</span></code></pre>
+<pre class="CodeRay"><code class="html language-html"><span style="color:#070">&lt;ul&gt;</span>
+  {% raw %}{% for post in site.posts %}{% endraw %}
+    <span style="color:#070">&lt;li&gt;</span>
+      <span style="color:#070">&lt;a</span> <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">{% raw %}{{ post.url }}{% endraw %}</span><span style="color:#710">&quot;</span></span><span style="color:#070">&gt;</span>{% raw %}{{ post.title }}{% endraw %}<span style="color:#070">&lt;/a&gt;</span>
+      <span style="color:#070">&lt;p&gt;</span>{% raw %}{{ post.excerpt }}{% endraw %}<span style="color:#070">&lt;/p&gt;</span>
+    <span style="color:#070">&lt;/li&gt;</span>
+  {% raw %}{% endfor %}{% endraw %}
+<span style="color:#070">&lt;/ul&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -213,7 +228,15 @@ dedicated Liquid tag as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content monospaced">
-<pre class="CodeRay"><code class="text language-text">{% raw %}{% highlight ruby %}{% endraw %}&#x000A;def show&#x000A;  @widget = Widget(params[:id])&#x000A;  respond_to do |format|&#x000A;    format.html # show.html.erb&#x000A;    format.json { render json: @widget }&#x000A;  end&#x000A;end&#x000A;{% raw %}{% endhighlight %}{% endraw %}</code></pre>
+<pre class="CodeRay"><code class="text language-text">{% raw %}{% highlight ruby %}{% endraw %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% raw %}{% endhighlight %}{% endraw %}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -221,7 +244,13 @@ dedicated Liquid tag as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content monospaced">
-<pre class="CodeRay"><code class="ruby language-ruby"><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">show</span>&#x000A;  <span style="color:#33B">@widget</span> = Widget(params[<span style="color:#A60">:id</span>])&#x000A;  respond_to <span style="color:#080;font-weight:bold">do</span> |format|&#x000A;    format.html <span style="color:#777"># show.html.erb</span>&#x000A;    format.json { render <span style="color:#606">json</span>: <span style="color:#33B">@widget</span> }&#x000A;  <span style="color:#080;font-weight:bold">end</span>&#x000A;<span style="color:#080;font-weight:bold">end</span></code></pre>
+<pre class="CodeRay"><code class="ruby language-ruby"><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">show</span>
+  <span style="color:#33B">@widget</span> = Widget(params[<span style="color:#A60">:id</span>])
+  respond_to <span style="color:#080;font-weight:bold">do</span> |format|
+    format.html <span style="color:#777"># show.html.erb</span>
+    format.json { render <span style="color:#606">json</span>: <span style="color:#33B">@widget</span> }
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span></code></pre>
 </div>
 </div>
 <div class="admonitionblock tip">
@@ -251,6 +280,35 @@ doing things like <a href="../permalinks">customizing post permalinks</a> or usi
 
 
 
+</div>
+<div class="large-3 columns">
+<h4>Collaborate!</h4>
+<ul class="button-group">
+<li>
+<a class="small button" href="https://github.com/graphitefriction/writeadapt-graphitefriction/edit/master/writing-posts.adoc">Edit</a>
+</li>
+<li>
+<a class="small secondary button" href="https://github.com/graphitefriction/writeadapt-graphitefriction/raw/master/writing-posts.adoc">Raw</a>
+</li>
+<li>
+<a class="small secondary button" href="https://github.com/graphitefriction/writeadapt-graphitefriction/commits/master/writing-posts.adoc">Log</a>
+</li>
+</ul>
+<h4>Topics</h4>
+<ul class="square">
+<li>
+<a href="/writeadapt-graphitefriction/posts/tag/asciidoc/">asciidoc</a>
+</li>
+<li>
+<a href="/writeadapt-graphitefriction/posts/tag/awestruct/">awestruct</a>
+</li>
+<li>
+<a href="/writeadapt-graphitefriction/posts/tag/conference/">conference</a>
+</li>
+<li>
+<a href="/writeadapt-graphitefriction/posts/tag/oscon/">oscon</a>
+</li>
+</ul>
 </div>
 </div>
 <footer class="row" style="max-width: 100%">
