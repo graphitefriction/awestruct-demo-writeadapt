@@ -21,3 +21,16 @@ asciidoctor:
 disqus: writeadapt
 disqus_generate_id: true
 disqus_developer: true
+profiles:
+  development:
+    deploy:
+      dummy:
+  production:
+    base_url: http://graphitefriction.github.io/awestruct-demo-writeadapt
+    disqus_developer: false
+    asciidoctor:
+      :attributes:
+        base_url: http://graphitefriction.github.io/awestruct-demo-writeadapt
+    deploy:
+      host: github_pages
+      branch: gh-pages
