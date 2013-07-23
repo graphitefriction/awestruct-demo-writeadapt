@@ -5,6 +5,9 @@ author: The Octocat
 author_url: https://github.com/octocat
 base_url: ''
 ctx_path: ''
+edit_base_url: https://github.com/graphitefriction/writeadapt-graphitefriction/edit/master
+raw_base_url: https://github.com/graphitefriction/writeadapt-graphitefriction/raw/master
+log_base_url: https://github.com/graphitefriction/writeadapt-graphitefriction/commits/master
 interpolate: false
 haml:
   :ugly: true
