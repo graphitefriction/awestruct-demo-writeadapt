@@ -20,9 +20,8 @@
       =page.post.content
   %footer.post-footer
     - if page.post.tags
-      .tags
-        %span.title
-          tags: 
+      .tags<
+        %i.label.icon-tags
         -#=page.post.tag_links
         - page.post.tags.each_with_index do |tag, idx|
           - unless idx.zero?

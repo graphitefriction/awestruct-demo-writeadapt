@@ -9,7 +9,9 @@
   %title=site.title
   %link{:rel=>'stylesheet', :href=>"#{site.ctx_path}/stylesheets/app.css"}
   %script(src="#{site.ctx_path}/javascripts/vendor/custom.modernizr.js")
-  %link{:rel=>'alternate', :type=>'application/atom+xml', :href=>"#{site.ctx_path}/feed.xml"}
+  %link(rel='alternate'
+        type='application/atom+xml'
+        href="#{site.ctx_path}/feed.xml")
   %link{:rel=>'author', :type=>'text/plain', :href=>"#{site.ctx_path}/humans.txt"}
 %body.antialiased
   %nav.top-bar
