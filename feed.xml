@@ -5,13 +5,13 @@
 <author>
 <name>The Octocat</name>
 </author>
-<updated>2013-07-23T10:08:47-07:00</updated>
+<updated>2013-07-23T16:47:37-07:00</updated>
 <link href="http://graphitefriction.github.io/writeadapt-graphitefriction/feed.xml" rel="self" type="application/atom+xml" />
 <link href="http://graphitefriction.github.io/writeadapt-graphitefriction/" rel="alternate" type="text/html" />
 <entry>
 <id>http://graphitefriction.github.io/writeadapt-graphitefriction/posts/2013/07/22/docs-workshop-oscon/</id>
 <title>Docs Workshop at OSCON 2013</title>
-<updated>2013-07-23T10:08:47-07:00</updated>
+<updated>2013-07-23T16:47:37-07:00</updated>
 <published>2013-07-22T00:00:00+00:00</published>
 <link href="http://graphitefriction.github.io/writeadapt-graphitefriction/posts/2013/07/22/docs-workshop-oscon/" rel="alternate" type="text/html" />
 <author>
@@ -48,6 +48,15 @@ publish the website to GitHub Pages
 and lots more!
 
 
+had some beers
+
+
+and converted from MarkDown
+
+
+even more beers, please!!
+
+
 
 
 In fact, this website was launched during the workshop.
@@ -74,14 +83,7 @@ Your browser does not support the video tag.
 
 
 
-Photo credits: OSCON
-
-
-
-
-
-
-...
+Photo...
 </summary>
 <content type="html">
 &lt;div id=&quot;preamble&quot;&gt;
@@ -110,6 +112,15 @@ We’re learning about how to:&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;and lots more!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;had some beers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;and converted from MarkDown&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;even more beers, please!!&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -149,7 +160,7 @@ Your browser does not support the video tag.
 <entry>
 <id>http://graphitefriction.github.io/writeadapt-graphitefriction/posts/2013/01/01/first-post/</id>
 <title>First Post</title>
-<updated>2013-07-23T10:08:47-07:00</updated>
+<updated>2013-07-23T12:45:45-07:00</updated>
 <published>2013-01-01T00:00:00+00:00</published>
 <link href="http://graphitefriction.github.io/writeadapt-graphitefriction/posts/2013/01/01/first-post/" rel="alternate" type="text/html" />
 <author>
