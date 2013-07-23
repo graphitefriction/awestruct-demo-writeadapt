@@ -2,6 +2,7 @@
 Your Name
 :awestruct-layout: base
 :showtitle:
+:site_name: \{site_name}
 
 {site_name} was founded by {author} during a conference workshop.
 It's quickly becoming much bigger than these humble beginnings.
