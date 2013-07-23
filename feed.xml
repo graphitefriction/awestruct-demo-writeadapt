@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
-<id>http://graphitefriction.github.io/awestruct-demo-writeadapt/</id>
+<id>http://graphitefriction.github.io/writeadapt-graphitefriction/</id>
 <title>WriteAdapt - For People Who Love Content</title>
 <author>
 <name>The Octocat</name>
 </author>
-<updated>2013-07-23T02:39:55-07:00</updated>
-<link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/feed.xml" rel="self" type="application/atom+xml" />
-<link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/" rel="alternate" type="text/html" />
+<updated>2013-07-23T02:49:51-07:00</updated>
+<link href="http://graphitefriction.github.io/writeadapt-graphitefriction/feed.xml" rel="self" type="application/atom+xml" />
+<link href="http://graphitefriction.github.io/writeadapt-graphitefriction/" rel="alternate" type="text/html" />
 <entry>
-<id>http://graphitefriction.github.io/awestruct-demo-writeadapt/posts/2013/07/22/docs-workshop-oscon/</id>
+<id>http://graphitefriction.github.io/writeadapt-graphitefriction/posts/2013/07/22/docs-workshop-oscon/</id>
 <title>Docs Workshop at OSCON 2013</title>
-<updated>2013-07-23T02:39:55-07:00</updated>
+<updated>2013-07-23T02:49:51-07:00</updated>
 <published>2013-07-22T00:00:00+00:00</published>
-<link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/posts/2013/07/22/docs-workshop-oscon/" rel="alternate" type="text/html" />
+<link href="http://graphitefriction.github.io/writeadapt-graphitefriction/posts/2013/07/22/docs-workshop-oscon/" rel="alternate" type="text/html" />
 <author>
 <name>The Octocat</name>
 </author>
@@ -90,7 +90,7 @@ Photo credits: OSCON
 &lt;p&gt;Content of first post, reporting from OSCON!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image thumb right&quot;&gt;&lt;a class=&quot;image&quot; href=&quot;http://www.flickr.com/photos/oreillyconf/7593405162/in/set-72157630609904796&quot;&gt;&lt;img src=&quot;http://graphitefriction.github.io/awestruct-demo-writeadapt/images/oscon-mascot.jpg&quot; alt=&quot;oscon-mascot&quot;&gt;&lt;/a&gt;&lt;/span&gt; I’m excited to be at OSCON 2013.
+&lt;p&gt;&lt;span class=&quot;image thumb right&quot;&gt;&lt;a class=&quot;image&quot; href=&quot;http://www.flickr.com/photos/oreillyconf/7593405162/in/set-72157630609904796&quot;&gt;&lt;img src=&quot;http://graphitefriction.github.io/writeadapt-graphitefriction/images/oscon-mascot.jpg&quot; alt=&quot;oscon-mascot&quot;&gt;&lt;/a&gt;&lt;/span&gt; I’m excited to be at OSCON 2013.
 I’m currently attending a workshop on collaborative documentation.
 We’re learning about how to:&lt;/p&gt;
 &lt;/div&gt;
@@ -122,7 +122,7 @@ They’ll be proud ;)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://www.flickr.com/photos/oreillyconf/7585059188/in/set-72157630609904796&quot;&gt;&lt;img src=&quot;http://graphitefriction.github.io/awestruct-demo-writeadapt/images/github-trainers.jpg&quot; alt=&quot;github trainers&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://www.flickr.com/photos/oreillyconf/7585059188/in/set-72157630609904796&quot;&gt;&lt;img src=&quot;http://graphitefriction.github.io/writeadapt-graphitefriction/images/github-trainers.jpg&quot; alt=&quot;github trainers&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;GitHub trainers, Matthew and Tim - &lt;span class=&quot;credit&quot;&gt;Photo credit: &lt;a href=&quot;http://www.flickr.com/photos/oreillyconf/sets/72157630609904796&quot;&gt;OSCON&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
@@ -147,11 +147,11 @@ Your browser does not support the video tag.
 </content>
 </entry>
 <entry>
-<id>http://graphitefriction.github.io/awestruct-demo-writeadapt/posts/2013/01/01/first-post/</id>
+<id>http://graphitefriction.github.io/writeadapt-graphitefriction/posts/2013/01/01/first-post/</id>
 <title>First Post</title>
-<updated>2013-07-23T02:49:42-07:00</updated>
+<updated>2013-07-23T02:49:51-07:00</updated>
 <published>2013-01-01T00:00:00+00:00</published>
-<link href="http://graphitefriction.github.io/awestruct-demo-writeadapt/posts/2013/01/01/first-post/" rel="alternate" type="text/html" />
+<link href="http://graphitefriction.github.io/writeadapt-graphitefriction/posts/2013/01/01/first-post/" rel="alternate" type="text/html" />
 <author>
 <name>Author Name</name>
 </author>
